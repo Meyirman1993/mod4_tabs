@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<String> nav = ['Мои фото', 'Галерея'];
 
-  Map<String, List<String>> data = {
+  Map<String, dynamic> data = {
     'Мои фото': [
       'https://picsum.photos/1200/501',
       'https://picsum.photos/1200/502',
@@ -64,7 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
       length: data.length,
       child: Scaffold(
         appBar: AppBar(
-          // toolbarHeight: 0,
           title: const Text('Homework example'),
           bottom: TabBar(
             labelPadding: const EdgeInsets.symmetric(vertical: 10),
